@@ -20,7 +20,7 @@ const SearchBar = () => {
     if (text.current?.value.length === 0) return;
 
     const response = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${text.current?.value}&APPID=${process.env.REACT_APP_WEATHER_API}&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=${text.current?.value}&APPID=${process.env.REACT_APP_WEATHER_API}&units=metric`
     );
 
     if (!response.ok) {
